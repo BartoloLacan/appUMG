@@ -31,6 +31,9 @@ public class GoogleStepDefinition {
         googlePage.login();
     }
 
+    @And("^cerrar sesion$")
+    public void cerrarSesion(){ googlePage.logout();  }
+
     @And("^Cerrar el navegador$")
     public void closeChrome() {
         googlePage.cerrarNavegadorclose();

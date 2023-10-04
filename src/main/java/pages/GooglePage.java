@@ -22,6 +22,12 @@ public class GooglePage extends BasePage{
         WebElement loginButton = driver.findElement(By.cssSelector("button[name='login'][value='Login']"));
         loginButton.click();
     }
+
+    public void logout() {
+        WebElement logoutLink = driver.findElement(By.linkText("Logout"));
+        logoutLink.click();
+    }
+
     private void slowType(WebElement element, String text) {
         for (char c : text.toCharArray()) {
             element.sendKeys(String.valueOf(c));

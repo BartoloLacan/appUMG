@@ -5,4 +5,5 @@ Feature: google
     Given se abre el navegador
     When Se ingresen las credenciales
     Then iniciar sesion
+    And cerrar sesion
     And Cerrar el navegador
