@@ -18,7 +18,10 @@ public class GooglePage extends BasePage{
         slowType(inputField, valueField);
         //inputField.sendKeys(valueField);
     }
-
+    public void login() {
+        WebElement loginButton = driver.findElement(By.cssSelector("button[name='login'][value='Login']"));
+        loginButton.click();
+    }
     private void slowType(WebElement element, String text) {
         for (char c : text.toCharArray()) {
             element.sendKeys(String.valueOf(c));
