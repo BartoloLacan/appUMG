@@ -28,15 +28,15 @@ public class BasePage {
         driver.get(url);
 
     }
-
     public void cerrarNavegadorclose() {
-            if (driver != null) {
-                try {
-                    Thread.sleep(5000); // Espera 5 segundos antes de cerrar
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        if (driver != null) {
+            try {
+                Thread.sleep(5000); // Espera 5 segundos antes de cerrar
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             driver.quit();
         }
     }
+
 }
