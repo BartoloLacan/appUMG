@@ -3,6 +3,7 @@ package stepdefinitions;
 import cucumber.api.java.After;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Step;
@@ -23,6 +24,11 @@ public class GoogleStepDefinition {
     public void enterUsername() {
         googlePage.enterField("username", "cikopij466@estudys.com");
         googlePage.enterField("password", "solola2023");
+    }
+
+    @Then("^iniciar sesion$")
+    public void iniciarSesion(){
+        googlePage.login();
     }
 
     @And("^Cerrar el navegador$")
