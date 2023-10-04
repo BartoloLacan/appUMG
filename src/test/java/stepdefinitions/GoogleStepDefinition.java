@@ -30,7 +30,7 @@ public class GoogleStepDefinition {
     public void iniciarSesion(){googlePage.login();
     }
 
-    @And("^cerrar sesio$")
+    @And("^cerrar sesion$")
     public void cerrarSesion() {
         googlePage.logout();
     }
