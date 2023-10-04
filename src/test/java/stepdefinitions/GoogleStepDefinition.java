@@ -27,8 +27,12 @@ public class GoogleStepDefinition {
     }
 
     @Then("^iniciar sesion$")
-    public void iniciarSesion(){
-        googlePage.login();
+    public void iniciarSesion(){googlePage.login();
+    }
+
+    @And("^cerrar sesio$")
+    public void cerrarSesion() {
+        googlePage.logout();
     }
 
     @And("^Cerrar el navegador$")

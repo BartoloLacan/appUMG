@@ -28,6 +28,8 @@ public class BasePage {
         driver.get(url);
 
     }
+
+
     public void cerrarNavegadorclose() {
         if (driver != null) {
             try {
