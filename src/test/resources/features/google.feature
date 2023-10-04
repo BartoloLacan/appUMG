@@ -5,4 +5,16 @@ Feature: google
     Given se abre el navegador
     When Se ingresen las credenciales
     Then iniciar sesion
-    And Cerrar el navegador
+    And usuario ingresa a shop
+    And usuario ingresa a shopd
+    And compra1
+    And comprar
+    And avacom
+
+
+
+
+
+
+
+
