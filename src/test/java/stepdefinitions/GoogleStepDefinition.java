@@ -31,6 +31,32 @@ public class GoogleStepDefinition {
         googlePage.login();
     }
 
+    @When("^dirigir compras$")
+    public void dirigir(){
+        googlePage.irCompras();
+    }
+
+
+    @And ("^compra dos$")
+    public void selected(){
+        googlePage.comprasDos();
+    }
+
+    @And("^seleccionar$")
+    public void listened(){
+        googlePage.seleccionar();
+    }
+
+    @And("^carrito$")
+    public void car(){
+        googlePage.Car();
+    }
+
+    @And("^Checks$")
+    public void checks(){
+        googlePage.Check();
+    }
+
     @And("^Cerrar el navegador$")
     public void closeChrome() {
         googlePage.cerrarNavegadorclose();
