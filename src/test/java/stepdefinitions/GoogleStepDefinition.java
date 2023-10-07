@@ -27,68 +27,12 @@ public class GoogleStepDefinition {
     }
 
     @Then("^iniciar sesion$")
-    public void iniciarSesion(){googlePage.login();
+    public void iniciarSesion(){
+        googlePage.login();
     }
 
     @And("^cerrar sesion$")
-    public void cerrarSesion() {
-        googlePage.logout();
-    }
-
-    @When("^dirigir compras$")
-    public void dirigir(){
-        googlePage.irCompras();
-    }
-
-
-    @And ("^compra dos$")
-    public void selected(){
-        googlePage.comprasDos();
-    }
-
-    @And("^seleccionar$")
-    public void listened(){
-        googlePage.seleccionar();
-    }
-
-    @And("^carrito$")
-    public void car(){
-        googlePage.Car();
-    }
-
-    @And("^Checks$")
-    public void checks(){
-        googlePage.Check();
-    }
-
-    @And("^usuario ingresa a shop$")
-    public void IngresoShop(){
-        googlePage.shop();
-    }
-
-    @And("^usuario ingresa a shopd$")
-    public void IngresoShopd(){
-        googlePage.shopd();
-    }
-
-    @And("^compra1$")
-    public void compraU(){
-        googlePage.compraun();
-    }
-
-    @And("^comprar$")
-    public void compra(){
-        googlePage.comprarp();
-
-    }
-
-    @And("^avacom$")
-    public void avcompra(){
-        googlePage.avancomp();
-
-    }
-
-
+    public void cerrarSesion(){ googlePage.logout();  }
 
     @And("^Cerrar el navegador$")
     public void closeChrome() {
