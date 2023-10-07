@@ -57,6 +57,22 @@ public class GoogleStepDefinition {
         googlePage.Check();
     }
 
+    @And("^Registrar Informacion$")
+    public void RegisterInformation(){
+        googlePage.RegisterInfo(
+                "CompanySa",
+                "Callables",
+                "Guatemala",
+                "1902",
+                "23435467"
+        );
+    }
+
+    @And ("^Registrar tarjeta$")
+    public void RegisterC(){
+        googlePage.RegisterCard("4970110000000062");
+    }
+
     @And("^Cerrar el navegador$")
     public void closeChrome() {
         googlePage.cerrarNavegadorclose();

@@ -13,4 +13,6 @@ Feature: google
     And seleccionar
     And carrito
     And Checks
+    And Registrar Informacion
+    And Registrar tarjeta
     And Cerrar el navegador
