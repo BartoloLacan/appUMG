@@ -2,9 +2,13 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
+import java.util.concurrent.TimeUnit;
 
 import java.util.concurrent.TimeUnit;
 
@@ -27,6 +31,7 @@ public class GooglePage extends BasePage{
         WebElement botonLogin = driver.findElement(By.name("login"));
         botonLogin.click();
     }
+
 
     public void logout() {
         WebElement logoutLink = driver.findElement(By.linkText("logout"));
@@ -60,20 +65,60 @@ public class GooglePage extends BasePage{
     }
 
     public void Car(){
+
+    public void shop(){
+        WebElement shopLink = driver.findElement(By.linkText("Shop"));
+        shopLink.click();
+
+    }
+
+    public void shopd(){
+        WebElement shopDLink = driver.findElement(By.linkText("SHOP ALL PRODUCTS"));
+        shopDLink.click();
+
+    }
+
+    public void compraun(){
+        WebElement productoLink = driver.findElement(By.cssSelector("a[data-product_sku='1412323']"));
+        productoLink.click();
+
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        WebElement prodLink = driver.findElement(By.cssSelector("a[data-product_sku='1410323']"));
+        prodLink.click();
+
+
+    }
+
+    public void comprarp(){
+>>>>>>> de24234a15bdd5d5f2cdcc0f08702b6215fbe58d
         WebElement botonCart = driver.findElement(By.id("cart"));
         botonCart.click();
     }
 
+<<<<<<< HEAD
     public void Check(){
         // Encontrar la etiqueta por el texto "Proceed to checkout"
         WebElement etiquetaCheckout = driver.findElement(By.linkText("Proceed to checkout"));
         etiquetaCheckout.click();
+=======
+    public void avancomp(){
+        WebElement botonCheckout = driver.findElement(By.linkText("Proceed to checkout"));
+        botonCheckout.click();
+>>>>>>> de24234a15bdd5d5f2cdcc0f08702b6215fbe58d
     }
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> de24234a15bdd5d5f2cdcc0f08702b6215fbe58d
     private void slowType(WebElement element, String text) {
         for (char c : text.toCharArray()) {
             element.sendKeys(String.valueOf(c));

@@ -61,6 +61,35 @@ public class GoogleStepDefinition {
         googlePage.Check();
     }
 
+    @And("^usuario ingresa a shop$")
+    public void IngresoShop(){
+        googlePage.shop();
+    }
+
+    @And("^usuario ingresa a shopd$")
+    public void IngresoShopd(){
+        googlePage.shopd();
+    }
+
+    @And("^compra1$")
+    public void compraU(){
+        googlePage.compraun();
+    }
+
+    @And("^comprar$")
+    public void compra(){
+        googlePage.comprarp();
+
+    }
+
+    @And("^avacom$")
+    public void avcompra(){
+        googlePage.avancomp();
+
+    }
+
+
+
     @And("^Cerrar el navegador$")
     public void closeChrome() {
         googlePage.cerrarNavegadorclose();
