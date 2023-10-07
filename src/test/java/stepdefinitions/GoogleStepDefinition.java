@@ -21,9 +21,9 @@ public class GoogleStepDefinition {
     }
 
     @When("^Se ingresen las credenciales$")
-    public void enterUsername() {
-        googlePage.enterField("username", "cikopij466@estudys.com");
-        googlePage.enterField("password", "solola2023");
+    public void enterCredentials() {
+        googlePage.EnterCredentials("username", "cikopij466@estudys.com");
+        googlePage.EnterCredentials("password", "solola2023");
     }
 
     @Then("^iniciar sesion$")

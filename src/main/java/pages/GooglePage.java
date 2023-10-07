@@ -20,10 +20,9 @@ public class GooglePage extends BasePage{
         navigateTo("https://heggerty.org/my-account/");
     }
 
-    public void enterField(String idField, String valueField){
-        WebElement inputField = driver.findElement(By.id(idField));
-        slowType(inputField, valueField);
-        //inputField.sendKeys(valueField);
+    public void EnterCredentials(String idInput, String valueInput){
+        WebElement inputEnter = driver.findElement(By.id(idInput));
+        slowType(inputEnter, valueInput);
     }
     public void login() {
         WebElement botonLogin = driver.findElement(By.name("login"));
@@ -116,13 +115,10 @@ public class GooglePage extends BasePage{
     }
 
 
-
-
-
     private void slowType(WebElement element, String text) {
         for (char c : text.toCharArray()) {
             element.sendKeys(String.valueOf(c));
-            sleep(90); // Espera 300 milisegundos entre cada carácter (ajusta el tiempo según tu preferencia)
+            sleep(90);
         }
     }
 
