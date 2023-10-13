@@ -3,8 +3,17 @@ Feature: google
   @ingresar
   Scenario: ingresar a google
     Given se abre el navegador
-    When Se ingresen las credenciales
-    Then iniciar sesion
+    When Registrar
+    And Seleccionar profesion
+    And Radio Button
+    And Radio Two
+    Then Iniciar Registro
+
+ @sesion
+   Scenario: credenciales
+     When Ir a Account
+     And Se ingresen las credenciales
+     Then iniciar sesion
 
   @Comprar
   Scenario: realizar compras
@@ -14,5 +23,5 @@ Feature: google
     And carrito
     And Checks
     And Registrar Informacion
-    And Registrar tarjeta
     And Cerrar el navegador
+
