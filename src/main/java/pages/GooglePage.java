@@ -225,19 +225,21 @@ public class GooglePage extends BasePage{
         slowType(inPhone, Phone);    sleep(3000);//el telefono
     }
 
-    public void RegisterCard(){//esto no funciona
-        WebElement iframe = driver.findElement(By.id("__privateStripeFrame2887"));
+    public void RegisterCard(String Card){//esto no funciona
 
 
-        driver.switchTo().frame(iframe);
+        //inputElement.sendKeys("5100010000000114");
+        WebElement input = driver.findElement(By.cssSelector("div.p-Input input[type='text'][name='number']"));
+        slowType(input, Card);
+        //input.sendKeys("5100010000000114");
 
-        WebElement inputElement = driver.findElement(By.id("Field-numberInput"));
 
-        inputElement.clear();
 
-        inputElement.sendKeys("5100010000000114");
+            //numberInput.sendKeys(numero);
+
 
     }
+
 
 
     private void slowType(WebElement element, String text) {

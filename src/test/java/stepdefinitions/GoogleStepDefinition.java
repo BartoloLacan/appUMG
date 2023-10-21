@@ -110,7 +110,7 @@ public class GoogleStepDefinition {
 
     @And ("^Registrar tarjeta$")
     public void RegisterC(){
-        googlePage.RegisterCard( );
+        googlePage.RegisterCard("5100010000000114");
     }
 
     @And("^Cerrar el navegador$")
