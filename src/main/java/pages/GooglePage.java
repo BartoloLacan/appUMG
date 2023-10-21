@@ -115,13 +115,9 @@ public class GooglePage extends BasePage{
         }
 
 
-        WebElement prodLink = driver.findElement(By.cssSelector("a[data-product_sku='1410323']"));
-        prodLink.click();
-
-
     }
 
-   
+
 
 
     public void comprasDos() {
@@ -248,6 +244,18 @@ public class GooglePage extends BasePage{
         inputElement.clear();
 
         inputElement.sendKeys("5100010000000114");
+
+    }
+
+    public void Acount(){
+        WebElement boton = driver.findElement(By.cssSelector(".fl-button"));
+        boton.click();
+
+    }
+
+    public void Out(){
+        WebElement botonLogout = driver.findElement(By.linkText("Log out"));
+        botonLogout.click();
 
     }
 

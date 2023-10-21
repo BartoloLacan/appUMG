@@ -23,6 +23,14 @@ Feature: google
     And carrito
     And Checks
     And Registrar Informacion
+
+
+
+  @Salir
+  Scenario: Cerar Sesion
+    And Myacount
+    And LogOut
     And Cerrar el navegador
+
 
 

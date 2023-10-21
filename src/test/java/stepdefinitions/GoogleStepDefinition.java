@@ -116,6 +116,15 @@ public class GoogleStepDefinition {
     public void RegisterC(){
         googlePage.RegisterCard( );
     }
+    @And ("^Myacount$")
+    public void cuenta(){
+        googlePage.Acount();
+    }
+
+    @And ("^LogOut$")
+    public void cerrar(){
+        googlePage.Out();
+    }
 
 
     @And("^Cerrar el navegador$")
