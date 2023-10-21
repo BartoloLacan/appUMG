@@ -22,13 +22,13 @@ Feature: google
     And seleccionar
     And carrito
     And Checks
-    And Registrar Informacion
+    Then Registrar Informacion
 
 
 
   @Salir
   Scenario: Cerar Sesion
-    And Myacount
+    When Myacount
     And LogOut
     And Cerrar el navegador
 

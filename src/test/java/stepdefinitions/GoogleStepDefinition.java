@@ -116,6 +116,7 @@ public class GoogleStepDefinition {
     public void RegisterC(){
         googlePage.RegisterCard( );
     }
+
     @And ("^Myacount$")
     public void cuenta(){
         googlePage.Acount();
